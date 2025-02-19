@@ -1,4 +1,3 @@
-#DSA-Evolution
 DSA-Evolution 🚀
 A comprehensive collection of Data Structures and Algorithms (DSA) problems with well-structured solutions, optimized approaches, and explanations. This repository aims to help programmers, competitive coders, and interview aspirants master DSA step by step.
 
