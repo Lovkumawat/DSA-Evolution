@@ -6,7 +6,7 @@ Return the maximum sum of like-time coefficient that the chef can obtain after p
 
 Dishes can be prepared in any order and the chef can discard some dishes to get this maximum value.
 
- 
+
 
 Example 1:
 
