@@ -39,3 +39,42 @@ int maxPartitions(string &s) {
     
         
     }
+    // approach 2
+        int maxPartitions(string &s) {
+        // code here
+        map<char,int>mp;
+         map<char,bool>vis;
+        for(int i=0;i<s.length();i++){
+            mp[s[i]]++;
+            
+        }
+        int index=0;
+        int n=s.length();
+        int count=0;
+        while(index<n){
+            mp[s[index]]--;
+            vis[s[index]]=true;
+            // check is break point//
+            if(mp[index]==0){
+                bool flag=true;
+                for(auto it:vis){
+                    if(vis[it.first]==true&&mp[it.first]!=0){
+                        flag=false;
+                        break;
+                    }
+                }
+             
+                if(flag==true){
+                    // a breaking point //
+                    count++;
+                }
+                
+            }
+            
+            index++;
+        }
+        
+        return count;
+       
+        
+    }
